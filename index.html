@@ -15,7 +15,7 @@
 		<link href="./fonts/css.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
-	<body>
+	<body onclick="redirect()">
 		<!-- partial:index.partial.html -->
 		<!-- SVG Spritesheet -->
 		<div style="height: 0; width: 0; position: absolute; visibility: hidden">
@@ -149,6 +149,24 @@
 		<script src="./js/Stage.js"></script>
 		<script src="./js/MyMath.js"></script>
 		<script src="./js/script.js"></script>
+
+		<!-- <form>
+			<button onclick="location.href='https://www.notion.so/huzhe/1943-01b51eb54900441a81f1387d2920b592';">点这里,还有悄悄话</button>
+		</form> -->
+		<!-- <button class="link-button" onclick="location.href='https://www.notion.so/huzhe/1943-01b51eb54900441a81f1387d2920b592'">点这里,还有悄悄话</button> -->
 	</body>
 </html>
 
+<!-- <script>
+	document.getElementById("my-link-button").addEventListener("click", function() {
+	  window.location.href = "https://www.notion.so/huzhe/1943-01b51eb54900441a81f1387d2920b592";
+	});
+</script> -->
+<script>
+	function redirect() {
+	  var userResponse = confirm('恭喜发现了新大陆，确定点击进去吗，还有一些悄悄话');
+	  if (userResponse) {
+		location.href='https://www.notion.so/huzhe/1943-01b51eb54900441a81f1387d2920b592';
+	  }
+	}
+</script>
